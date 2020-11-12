@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+    font-family: Arial;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header {
+    padding: 2rem 3rem;
+    font-size: 1.3rem;
+    line-height: 2.4rem;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+
+}
+
+header nav ul li {
+    margin-left: 1.5rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li a {
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, .87);
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+header nav ul li span {
+    font-size: 2rem;
+    color: rgba(0, 0, 0, .57);
+}
+
+header img {
+    height: 3.2rem;
+    width: 3.2rem;
+    border-radius: 50%;
+    margin-left: 1.5rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.input-group {
+    border: 1px solid #dfe1e5;
+    border-radius: 100px;
+    padding: 1.2rem 2rem;
+}
+
+.input-group:hover {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .15);
+    border-color: transparent;
+}
+
+.search-icon,
+.search-keyboard,
+.search-microphone {
+    font-size: 1.5rem;
+    color: #9aa0a6;
+}
+
+.search-microphone {
+    color: #4285f4;
+}
+
+.search-keyboard {
+    margin-right: 1.3rem;
+}
+
+.search-input {
+    font-size: 1.6rem;
+    border: 0;
+    outline: none;
+    width: 45rem;
+    padding: 0 1rem;
+}
+
+.logo img {
+    margin: 8.5rem 0 2.59rem;
+}
+
+.button-group {
+    margin-top: 2rem;
+}
+
+.button-group button {
+    font-size: 1.4rem;
+    line-height: 2.7rem;
+    border-radius: 4px;
+    border: 1px solid #f8f9fa;
+    background-image: -webkit-linear-gradient(top, #f8f9fa, #f8f9fa);
+    padding: 0 1.6rem;
+    margin: 11px 4px;
+    height: 3.6rem;
+    min-width: 5.4rem;
+    cursor: pointer;
+}
+
+.button-group button:hover {
+    border: 1px solid #dfe1e5;
+    
+}
+footer {
+}
+/*
+<footer>
+        <div class="footer-up">
+            <div class="user-location">Узбекистан</div>
+        </div>
+        <div class="footer-down">
+            <nav>
+                <ul><a href="#">Реклама</a></ul>
+                <ul><a href="#">Для бизнеса</a></ul>
+                <ul><a href="#">Всё о Google</a></ul>
+                <ul><a href="#">Как работает Google Поиск</a></ul>
+            </nav>
+            <nav>
+                <ul><a href="#">Конфиденциальность</a></ul>
+                <ul><a href="#">Условия</a></ul>
+                <ul><a href="#">Настройки</a></ul>
+            </nav>
+        </div>
+    </footer>
+*/
