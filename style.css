@@ -4,12 +4,14 @@
     font-size: 10px;
     font-family: Arial;
 }
+
 body {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
 header {
     padding: 2rem 3rem;
     font-size: 1.3rem;
@@ -123,50 +125,76 @@ main {
 
 .button-group button:hover {
     border: 1px solid #dfe1e5;
-    
+
 }
+
 footer {
     background: rgb(242, 242, 242);
 }
+
 .footer-up {
     line-height: 4rem;
     border: 1px solid #dfe1e5;
 }
+
 .footer-down {
     line-height: 4rem;
     display: flex;
     justify-content: space-between;
 }
+
 .footer-down nav {
     display: flex;
 }
-.footer-down nav a, .user-location {
+
+.footer-down nav a,
+.user-location {
     font-size: 1.5rem;
-    color: rgba(0,0,0,.54);
+    color: rgba(0, 0, 0, .54);
     text-align: left;
     text-decoration: none;
     padding-left: 2.7rem;
 }
+
 .footer-down nav:last-child a:last-child {
     padding-right: 2.7rem;
 }
-/*
-<footer>
-        <div class="footer-up">
-            <div class="user-location">Узбекистан</div>
-        </div>
-        <div class="footer-down">
-            <nav>
-                <ul><a href="#">Реклама</a></ul>
-                <ul><a href="#">Для бизнеса</a></ul>
-                <ul><a href="#">Всё о Google</a></ul>
-                <ul><a href="#">Как работает Google Поиск</a></ul>
-            </nav>
-            <nav>
-                <ul><a href="#">Конфиденциальность</a></ul>
-                <ul><a href="#">Условия</a></ul>
-                <ul><a href="#">Настройки</a></ul>
-            </nav>
-        </div>
-    </footer>
-*/
+
+@media (max-width: 950px) {
+    .footer-down {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 620px) {
+    .search-input {
+        width: auto;
+    }
+}
+
+@media (max-width: 550px) {
+    html {
+        font-size: 9px;
+    }
+
+    .footer-down nav a,
+    .user-location {
+        font-size: 1.3rem;
+        padding-left: 2.2rem;
+    }
+}
+
+@media (max-width: 450px) {
+    main {
+        margin-bottom: 10rem;
+    }
+    .footer-down nav {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 300px) {
+    body, html {
+        min-width: 300px;
+    }
+}
