@@ -5,6 +5,7 @@
     font-family: Arial;
 }
 body {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -61,6 +62,7 @@ main {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-bottom: auto;
 
 }
 
@@ -124,6 +126,29 @@ main {
     
 }
 footer {
+    background: rgb(242, 242, 242);
+}
+.footer-up {
+    line-height: 4rem;
+    border: 1px solid #dfe1e5;
+}
+.footer-down {
+    line-height: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-down nav {
+    display: flex;
+}
+.footer-down nav a, .user-location {
+    font-size: 1.5rem;
+    color: rgba(0,0,0,.54);
+    text-align: left;
+    text-decoration: none;
+    padding-left: 2.7rem;
+}
+.footer-down nav:last-child a:last-child {
+    padding-right: 2.7rem;
 }
 /*
 <footer>
